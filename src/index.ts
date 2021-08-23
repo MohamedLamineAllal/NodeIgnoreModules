@@ -29,7 +29,7 @@ function ignoreModules(modulesList: string[], nodePath?: string): void {
 
       const modulePath = path.resolve(nodePath, module)
 
-      console.log('Remove directory ------');
+      console.log('\nRecreate directory ------');
       console.log(modulePath);
 
       rimraf.sync(modulePath)
